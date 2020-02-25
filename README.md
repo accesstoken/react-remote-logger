@@ -26,12 +26,12 @@ import {Logger} from "react-remote-logger";
 function App() {
     Logger({
         'timestamp': new Date(),
-        'level': 'info,
+        'level': 'info',
         'message': 'this is a log from a client'
     });
     return (
         <div className="App">
-          <h1>Log sent to the server</h1>
+          <p>Log sent to the server.</p>
         </div>
     )
 }
