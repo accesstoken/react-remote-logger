@@ -1,6 +1,6 @@
 {
   "name": "react-remote-logger",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "React remote logger",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -11,6 +11,8 @@
   },
   "author": "Massoud Seifi",
   "license": "MIT",
+  "keywords": ["react", "logger", "remote", "client", "server", "api"],
+  "homepage": "https://github.com/accesstoken/react-remote-logger",
   "devDependencies": {
     "@types/node": "^13.7.4",
     "@types/react": "^16.9.22",
