@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {Service} from "./Service";
 import {Dictionary} from "./Dictionary";
 
-export function Logger(log: object) {
+export function Logger(log: Dictionary<string>[]>) {
     fetch(process.env.REACT_APP_SEND_LOG_ENDPOINT, {
         method: 'POST',
         headers: {
