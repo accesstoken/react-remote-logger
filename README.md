@@ -25,7 +25,7 @@ import {Logger} from "react-remote-logger";
 
 function App() {
     Logger({
-        'timestamp': new Date(),
+        'timestamp': (new Date()).toLocaleString(),
         'level': 'info',
         'message': 'this is a log from a client'
     });
