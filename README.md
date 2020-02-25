@@ -69,5 +69,5 @@ export default function LogViewer() {
 
 ## LICENSE
 
-(MIT License)
+MIT License
 
