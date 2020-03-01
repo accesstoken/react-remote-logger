@@ -1,6 +1,7 @@
 # react-remote-logger
-A remote logger for react
+Logging is an essential part of development. While working on React projects, logging provides a way to get feedback and information about what’s happening within the running code using `console.log()` function. However, once an app or website is deployed into production, the default console provides no way to continue benefiting from logs.
 
+Since these logs are client-side, all errors experienced by users will be lost in their own browsers. This means that the only way we can find out about errors in our application is by user reports, which often don’t happen; many users will simply leave rather than filling out a bug report. Therefore, good user experience relies on errors being reported without user intervention, which is a feature that the default console lacks. This package, will help to handle logging for capturing usage and error data in a React app by sending logs to a server. We can also create a front-end application to retrieve logs from the server and show them in a table with sorting and filtering capabilities. 
 ## Install
 
 ```
@@ -9,8 +10,11 @@ $ npm install react-remote-logger --save
 
 ## Usage
 
-### Client Side: send logs from the client app to the server
-Create a `.env` file on the root folder of your client app (the same level as the `package.json` file) and set `REACT_APP_SEND_LOG_ENDPOINT` to the server's endpoint which receives logs via the POST method:
+### Send logs from the client app to the server
+Let's assume you have a client application which you need to debug after deploying into the production. 
+First we need to setup a server with the endpoints to send and receive logs. If you don't have a server, you can setup a simple Flask/Python API server using the code provided at the end of this file.
+
+We need to tell the client application how to connect to the server. Create a `.env` file on the root folder of your client app (the same level as the `package.json` file) and set `REACT_APP_SEND_LOG_ENDPOINT` to the server's endpoint which receives logs via the POST method:
 
 ```txt
 REACT_APP_SEND_LOG_ENDPOINT=http://<your server endpoint for sending logs>
@@ -20,7 +24,6 @@ For example:
 ```txt
 REACT_APP_SEND_LOG_ENDPOINT=http://example.com:5000/api/logger
 ```
-If you don't have a server, you can setup a simple Flask/Python API using the code provided at the end of this file.
 
 Install env-cmd package using the code below:
 ```
