@@ -65,9 +65,9 @@ Logs can be a dictionary of any information you want to send via the Logger func
 
 
 
-### Server Side: retrieve logs from the server
+### Retrieve logs from the server
 
-Create a `.env` file on the root of your log viewer app and set `REACT_APP_RETRIEVE_LOGS_ENDPOINT` to the server's log retrieval endpoint:
+You can create a frond-end application to show the logs stored on the server. We need to tell the application the endpoint to the log retrieval API. Let's create a `.env` file on the root of the log viewer app and set `REACT_APP_RETRIEVE_LOGS_ENDPOINT` to the server's log retrieval endpoint:
 
 ```txt
 REACT_APP_RETRIEVE_LOGS_ENDPOINT=http://<your server endpoint for retrieving logs>
