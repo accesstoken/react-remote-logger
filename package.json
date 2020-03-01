@@ -4,6 +4,7 @@
   "description": "React remote logger",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "private": false,
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
