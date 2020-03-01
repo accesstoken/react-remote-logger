@@ -1,6 +1,6 @@
 {
   "name": "react-remote-logger",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "React remote logger",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -25,14 +25,13 @@
   ],
   "homepage": "https://github.com/accesstoken/react-remote-logger",
   "devDependencies": {
-    "@types/node": "^13.7.4",
-    "@types/react": "^16.9.22",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "^3.4.0",
-    "typescript": "^3.8.2"
   },
   "peerDependencies": {
-    "react": "^15.0.0-0 || ^16.0.0-0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "@types/node": "^13.7.4",
+    "@types/react": "^16.9.22",
+    "react-scripts": "^3.4.0",
+    "typescript": "^3.8.2"
   }
 }
