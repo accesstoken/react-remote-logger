@@ -4,7 +4,7 @@ A remote logger for react
 ## Install
 
 ```
-npm install react-remote-logger --save
+$ npm install react-remote-logger --save
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ If you don't have a server, you can setup a simple Flask/Python API using the co
 
 Install env-cmd package using the code below:
 ```
-npm install env-cmd --save
+$ npm install env-cmd --save
 ```
 Change the build section of the `package.json` to build the project with the environmental variables provided in the `.env` file.
 ```txt
@@ -97,10 +97,15 @@ export default function LogViewer() {
 ### Setup a logging server using Flask and Python
 Install flask and flask_cors:
 ```bash
-pip install flask flask_cors
+$ pip install flask flask_cors
+```
+```$xslt
+$ mkdir server
+$ cd server
+$ mkdir logs
 ```
 
-Create `app.py` containing the code below:
+Now create `app.py` containing the code below:
 ```python
 #!/usr/bin/env python
 import json
@@ -153,7 +158,8 @@ Now you can start your server:
 
 ```$xslt
 $ python app.py 
- * Serving Flask app "logger" (lazy loading)
+
+ * Serving Flask app "app" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
@@ -164,6 +170,7 @@ $ python app.py
  * Debugger PIN: 328-216-763
 
 ```
+
 ## LICENSE
 
 MIT License
