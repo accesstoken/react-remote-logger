@@ -14,11 +14,10 @@ $ npm install react-remote-logger --save
 Let's assume you have a client application which you need to debug after deploying into the production. 
 First we need to setup a server with the endpoints to send and receive logs. If you don't have a server, you can setup a simple Flask/Python API server using the code provided at the end of this file.
 
-We need to tell the client application how to connect to the server. Create a `.env` file on the root folder of your client app (the same level as the `package.json` file) and set `REACT_APP_SEND_LOG_ENDPOINT` to the server's endpoint which receives logs via the POST method:
-
-```txt
+We need to tell the client application how to connect to the server. Create a `.env` file on the root folder of your client app (the same level as the `package.json` file) and set `REACT_APP_SEND_LOG_ENDPOINT` variable to the server's endpoint which receives logs via the POST method. The format is: 
+`
 REACT_APP_SEND_LOG_ENDPOINT=http://<your server endpoint for sending logs>
-```
+` without spaces or quotation marks.
 
 For example:
 ```txt
@@ -177,4 +176,13 @@ $ python app.py
 ## LICENSE
 
 MIT License
+
+Copyright (c) 2020, Massoud Seifi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 
