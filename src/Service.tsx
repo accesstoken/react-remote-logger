@@ -1,3 +1,4 @@
+
 interface ServiceInit {
     status: 'init';
 }
