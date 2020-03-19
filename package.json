@@ -1,6 +1,6 @@
 {
   "name": "react-remote-logger",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "description": "React remote logger",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -16,12 +16,17 @@
     "react-remote-logger",
     "react",
     "logger",
+    "log",
+    "logging",
     "remote",
     "client",
     "server",
     "api",
     "flask",
-    "python"
+    "python",
+    "typescript",
+    "js",
+    "jsx"
   ],
   "homepage": "https://github.com/accesstoken/react-remote-logger",
   "devDependencies": {
